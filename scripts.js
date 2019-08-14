@@ -1,4 +1,5 @@
-const hamburger = document.querySelector("hamburger")
+const hamburger = document.querySelector(".header__hamburger")
+const menu = document.querySelector('.menu')
 hamburger.addEventListener('click', function () {
-  console.log(hamburger)
+  menu.classList.toggle('menu--active')
 })
