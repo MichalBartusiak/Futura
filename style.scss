@@ -2,4 +2,100 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 200vh;
+  // background-color: gray;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@media (min-width:360px) {
+  .header {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 1;
+
+    &__hamburger {
+      align-self: center;
+      margin-right: 10vw;
+
+      .fas {
+        font-size: 9vw;
+        transition: .3s;
+        cursor: pointer;
+      }
+
+      &:hover {
+        color: orangered;
+      }
+    }
+
+    &__logo {
+      margin-top: 2%;
+      height: 30vw;
+      width: 30vw;
+
+    }
+  }
+
+
+  .menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: .3s;
+
+    &--active {
+      border-top: 1px solid white;
+      opacity: 1;
+      transform: translateY(110px);
+    }
+
+    &__list {
+      list-style: none;
+      transition: .3s;
+
+    }
+
+    &__item {
+      margin-bottom: 2vw;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: black;
+      font-size: 5vw;
+    }
+
+
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner {
+    color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: url('https://placeimg.com/640/480/people');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+
 }
