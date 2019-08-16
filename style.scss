@@ -16,7 +16,7 @@ body {
     align-content: center;
     width: 100%;
     height: 80px;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+    background-color: rgba($color: #000000, $alpha: 0.4);
 
 
 
@@ -26,7 +26,7 @@ body {
       margin-right: 10vw;
 
 
-      .fas {
+      .fa-bars {
         font-size: 9vw;
         transition: .3s;
         cursor: pointer;
@@ -104,13 +104,13 @@ body {
   }
 
   .banner {
-    // color: white;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     text-align: center;
-    // background: url('https://placeimg.com/640/480/people');
+    background: url('https://placeimg.com/640/480/people');
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -168,6 +168,52 @@ body {
           &:hover {
             background-color: orangered;
           }
+        }
+      }
+    }
+
+
+  }
+
+  .pannel {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__item {
+      display: flex;
+      width: 100%;
+      background: linear-gradient(135deg, #2f3c44 49%, rgba(41, 54, 60, 1) 69%);
+      color: white;
+      padding: 3%;
+
+      &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: cadetblue;
+        width: 30%;
+
+        &__arch {
+          font-size: 18vw;
+          padding-left: 2vw;
+        }
+      }
+
+      &__text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        // background-color: gray;
+        padding-left: 5vw;
+        width: 100%;
+
+        &__title {
+          font-size: 5vw;
         }
       }
     }
